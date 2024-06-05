@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rev.2</title>
+
+    <link rel="stylesheet" href="Estilos\styles (rev.2).css">
+    <link rel="stylesheet" href="Estilos\header.css">
+    <link rel="stylesheet" href="Estilos\asideListaDinamica.css">
+    <link rel="stylesheet" href="Estilos\asideCarrito.css">
+    <link rel="stylesheet" href="sideBar.css">
+    <link rel="stylesheet" href="Estilos\asideChecklist.css">
+    <link rel="stylesheet" href="Estilos\contenedorAside.css">
+
+</head>
+
+<body>
+    <!-- ----------------------header---------------- -->
+    <header>
+        <div>
+            <img class="logo" src="Imagenes\CompraSmartCarro.jpg" alt="Compra Smart">
+            <img class="logoP" src="Imagenes\puntoNar.png" alt="">
+            <h1>CompraSmart</h1>
+            <img class="logoP" src="Imagenes\puntoNar.png" alt="">
+        </div>
+
+
+
+    </header>
+
+    <!-- ---------------------------Section----------------- -->
+
+
+
+    <section class="main">
+
+
+
+        <div class="busqueda">
+            <input type="text" placeholder="Ingrese un Producto...">
+
+            <input id="lupaBuscar" type="image" src="Imagenes\lupa Nar.png" alt="Enviar">
+        </div>
+
+        <div class="sugerencias">
+            <ul>
+            </ul>
+        </div>
+
+    </section>
+
+    <div class="contenedorAsides">
+    <!-- ------------------------------SideBar Oculta--------------------------- -->
+    <div class="asideExpandido" id="sideBar">
+        <div class="imgAsideDiv">
+            <span class="sideBarSpan asideTop ">
+                <!-- <img class= "cargarCarrito sideBarImg" src="Imagenes\carrito.png" alt="Carrito"> -->
+                <img class="cargarCarrito sideBarImg" src="Imagenes\carrito.png" alt="Cargar Carrito"
+                    style="background-color: #AA6639; border-radius: 20%; box-shadow: #ff6600 0px 0px 10px;">
+                <span class="counter counterSideBar" style="width: 30%;">0</span>
+            </span>
+
+
+            <span class="sideBarSpan asideTop ">
+                <img class="elegirSuper sideBarImg" src="Imagenes\flecha.png" alt="algo">
+            </span>
+
+            <span class="sideBarSpan asideTop">
+                <img class="generarChecklist sideBarImg" src="Imagenes\Checklist1.png" alt="Generar Checklist">
+            </span>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="divDespliegue">
+        <img src="derecha.png" alt="colapsar" class="sideBar">
+    </div>
+
+    <!-- ------------------------------aside Elegir SuperMercado--------------------------- -->
+    <aside class="asideExpandido" id="elegirSuper">
+
+        <div class="imgAside">
+            <span class="asideTop">
+                <img class="cargarCarrito" src="Imagenes\carrito.png" alt="Carrito">
+                <span class="counter" style="width: 30%;">0</span>
+            </span>
+
+
+            <span class="asideTop">
+                <img class="elegirSuper" src="Imagenes\flecha.png" alt="algo">
+            </span>
+
+            <span class="asideTop">
+                <img class="generarChecklist" src="Imagenes\Checklist1.png" alt="Generar Checklist">
+            </span>
+        </div>
+
+
+        <div class="carritoAsideContenedor">
+
+            <div id="titulos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Supermercado</th>
+                            <th>Precio Mínimo</th>
+                            <th>Precio Máximo</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="resultados contenedorResultadoSupermercado">
+
+            </div>
+            <!-- <div class="resultados ganador">
+            <table class="desglose">
+            div class="resultados "> -->
+
+
+        </div>
+    </aside>
+
+
+    <!-- ------------------------------aside generarCheclist--------------------------- -->
+    <div class="asideExpandido" id="generarChecklist">
+        <div class="imgAside">
+            <span class="asideTop">
+                <img class="cargarCarrito" src="Imagenes\carrito.png" alt="Carrito">
+                <span class="counter" style="width: 30%;">0</span>
+            </span>
+
+            <span class="asideTop">
+                <img class="elegirSuper" src="Imagenes\flecha.png" alt="algo">
+            </span>
+
+            <span class="asideTop">
+                <img class="generarChecklist" src="Imagenes\Checklist1.png" alt="Generar Checklist">
+            </span>
+        </div>
+
+        <div class="divContenedorTotalChecklist">
+
+        </div>
+
+    </div>
+
+
+    <!-- ------------------------------aside listado Productos--------------------------- -->
+    <div class="asideExpandido" id="cargarCarrito">
+
+        <div class="imgAside">
+            <span class="asideTop">
+                <img class="cargarCarrito" src="Imagenes\carrito.png" alt="Cargar Carrito"
+                    style="background-color: #AA6639; border-radius: 20%; box-shadow: #ff6600 0px 0px 10px;">
+                <span class="counter" style="width: 30%;">0</span>
+            </span>
+
+            <span class="asideTop">
+                <img class="elegirSuper" src="Imagenes\flecha.png" alt="Elegir Super">
+            </span>
+
+            <span class="asideTop">
+                <img class="generarChecklist" src="Imagenes\Checklist1.png" alt="Generar Checklist">
+            </span>
+        </div>
+
+        <div class="listaAgregados">
+            <div class="titulosAgregados">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+
+            <div class="divTablaProductos">
+                <table class="tablaProductos">
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="Scripts\sugerencia(rev3.1).js"></script> 
+    <script src="Scripts\baseDatos(rev1.1).js"></script>
+    <script src="Scripts\agregado(rev2.2).js"></script>
+    <script src="Scripts\cambioAside(rev.2).js"></script>
+    <script src="Scripts\DesplegableCarrito.js"></script>
+    <script src="Scripts/supermercados.js"></script>
+    <script src="Scripts\consulta.js"></script>
+    <script src="Scripts\generarChecklist.js"></script>
+    <script src="Scripts\tachado.js"></script>
+
+
+</body>
+
+</html>

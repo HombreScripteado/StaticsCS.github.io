@@ -1,0 +1,38 @@
+#sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5%; /* Ajusta según sea necesario */
+    height: 100%;
+    background-color: #282727;
+    z-index: 1;
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes en una sola columna */
+    justify-content: space-between; /* Distribuye el espacio verticalmente */
+    align-items: center; /* Centra las imágenes horizontalmente */
+}
+
+@media screen and (max-width: 768px) {
+    #sideBar {
+        width: 10%;
+    }
+}
+
+.imgAsideDiv {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes en una sola columna */
+    align-items: center; /* Centra las imágenes horizontalmente */
+}
+
+.sideBarSpan {
+    width: 100%;
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+}
+
+.sideBarImg {
+    width: 100%; /* Ancho de las imágenes */
+    max-width: 100%; /* Evita que las imágenes excedan el ancho del contenedor */
+}
+

@@ -1,0 +1,141 @@
+
+/* ----------------------------------------Cabeza de Checklist ------------------------- */
+.divContenedorTotalChecklist{
+    font-size: 90%;
+    font-family: helvetica,Arial, Helvetica, sans-serif;
+}
+
+.contenedorResultadoChecklist{
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: dashed #AA6639 2px;
+    color: white;
+}
+
+.divTextoPrecio{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+}
+
+.divTextoPrecio :nth-child(2){
+    margin-left: 2%;
+}
+
+
+.divTextoPrecio div{
+    display: inline-block;
+    margin-bottom: 1%;
+}
+
+
+
+.contenedorResultadoChecklist img{
+    width: 20%;
+    height: 5%;
+    border-radius: 15%;
+}
+
+.enlace{
+    position: absolute;
+    top: 1%;
+    margin-left: 2%;
+    color: white;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.enlace a{
+    color: white;
+    font-weight: bold;
+}
+/* ---------------------------------------Cuerpo de Checklist----------------- */
+
+.contenedorDetalleChecklist tbody{
+    width: 100%;
+}
+.divContenedorTotalChecklist, .detalleChecklist{
+    width: 100%;
+    color: white;
+}
+
+.detalleChecklist{
+    display: block;
+    width: 100%;
+}
+
+.detalleChecklist td:first-child {
+    flex: 60%; /* Ocupa el 60% del ancho del tbody */
+    padding-right: 2%;
+}
+
+.detalleChecklist td:last-child {
+    flex: 40%; /* Ocupa el 40% restante del ancho del tbody */
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.celdaImgNombreProd {
+    display: flex;
+    align-items: center;
+}
+
+.imagen img {
+    width: 50px;
+    margin-right: 10px;
+    border: solid #AA6639 3px;
+    border-radius: 25%;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.detalle {
+    margin-top: 5px;
+}
+
+.detalleChecklist tr{
+    position: relative;
+    z-index: 5;
+}
+
+.botonTachar{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0%;
+}
+
+.imagenCheck{
+    width: 25px;
+}
+
+.detalleChecklist tr{
+    position: relative; /* Añadido */
+    overflow: hidden; /* Añadido */
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.lineaTachado {
+    position: absolute;
+    top: 50%; /* Sitúa la línea en la mitad verticalmente */
+    left: 0;
+    width: 0%; /* Inicialmente oculto */
+    height: 2px; /* Grosor de la línea */
+    background-color: black; /* Color de la línea */
+    z-index: 2; /* Asegura que la línea esté encima del contenido */
+    transition: width 0.5s; /* Animación de la longitud */
+}

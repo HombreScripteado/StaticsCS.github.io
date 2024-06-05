@@ -1,0 +1,131 @@
+/* ----------------------------colores y margenes---------------- */
+.resultados {
+    color: white;
+    z-index: 7;
+}
+
+.listaAside {
+    list-style: none;
+    padding: 0;
+}
+
+.listaAside li {
+    margin-bottom: 5px;
+}
+
+.tablaSupermercado {
+    color: white;
+}
+
+.ganador {
+    border-bottom: dashed #AA6639 1px;
+}
+
+#titulos {
+    color: white;
+    border-bottom: dashed #AA6639 1px;
+    font-size: 80%;
+}
+
+.ganador thead {
+    color: #85bb65;
+    font-weight: bold;
+}
+
+.ganador thead :hover {
+    color: #7fff00;
+}
+
+/* -----------------------ancho de celdas------------------------ */
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#titulos th:first-child {
+    width: 50%;
+    text-align: center;
+}
+
+.desglose,
+.resultados th:first-child {
+    width: 50%;
+}
+
+.resultados thead tr:first-child{
+    text-align: center;
+}
+
+.desglose,
+.resultados td+td {
+    width: 50%;
+}
+
+.resultados th, .desglose tr{
+    font-size: 80%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+.detalle{
+    display: flex;
+    align-items: center;
+}
+
+.contenido{
+    display: inline-block;
+}
+
+
+tbody :hover {
+    background-color: #AA6639;
+}
+
+thead :hover {
+    background-color: #AA6639;
+    cursor: pointer;
+
+}
+
+.celdaImgNombreProd img{
+    width: 25%;
+    height: 25%;
+}
+
+.celdaImgNombreProd{
+    display: inline-block;
+}
+/* ----------------------displays------------------------- */
+
+.desglose {
+    z-index: 0;
+    display: none;
+    border-bottom: dashed #AA6639 1px;
+    margin-bottom: 2%;
+    color: white;
+    transform: translateX(-100%); /* Desplazado fuera de la vista hacia arriba */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%; /* Asegura que el elemento ocupe todo el ancho del contenedor */
+}
+
+.desglose.visible {
+    transform: translateX(0); /* En su posición original */
+    opacity: 1; /* Totalmente visible */
+    display: table-row-group; /* Asegura que se muestra como un grupo de filas de tabla */
+}
+
+.desglose tr {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.desglose.visible tr {
+    transform: translateX(0);
+    opacity: 1;
+}

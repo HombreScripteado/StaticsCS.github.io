@@ -1,0 +1,44 @@
+.contenedorAsides{
+    position: fixed;
+    margin-top: 78.875px;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    max-width: 350px;
+    max-height: 100%;
+    transition: 0.65s ease-in-out
+}
+
+
+.divDespliegue{
+    position: absolute;
+    border-radius: 15%;
+    left: -9%;
+    top: 2%;
+    width: 30px;
+    height: 50px;
+    border: #ff6600 2px double;
+    z-index: -10;
+    background-color: 28272760;
+    box-shadow: #a9a9a9 4px 0px 15px;
+    /* #28272760 */
+}
+
+@media screen and (max-width: 768px) {
+    .contenedorAsides {
+        width: 63%;
+    }
+    .divDespliegue{
+        top: 1.15%;
+        left: -9%;
+    }
+}
+
+.divDespliegue img{
+    position: absolute;
+    top: 35%;
+    padding-left: 0;
+    width: 15px;
+}

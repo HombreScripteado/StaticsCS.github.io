@@ -1,0 +1,111 @@
+/* ----------------------------body---------------------- */
+html{
+    width: 100%;
+    height: 100%; 
+}
+
+body {
+    margin: 0; /* Eliminar el margen predeterminado del body */
+    /* margin-right: 250px; */
+    padding: 0; /* Eliminar el relleno predeterminado del body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #343434;
+    width: 100%;
+    height: 100%;
+}
+/* -----------------------section-------------------------- */
+
+.main{
+    position: absolute;
+    /* top: 9%; */
+    top: 32.5px;
+    max-width: 190px;
+}
+
+section .busqueda{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section.sugerencias {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sugerencias ul {
+    /* background-color: darkgray; */
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+.sugerencias ul :hover {
+    background-color: #AA6639;
+    cursor: pointer;
+    
+}
+
+
+.sugerencias ul li {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 2%;
+    padding-right: 2%; 
+    border-color: transparent;
+    background-color: darkgray;
+    margin: 2%;
+}
+
+.botonAgregar{
+    border-radius: 3px;
+    
+}
+
+.sugerenciaNoExiste{
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ----------Barra de búsqueda------------------ */
+#lupaBuscar {
+    width: 20px;
+    margin-bottom: 0;
+    padding-left: 3px;
+    
+}
+
+input[type="text" i]::placeholder {
+    color: #AA6639;
+}
+
+input[type="text" i] {
+    color: #ff6600;
+    background-color:#343434;
+    padding-block: 1px;
+    padding-inline: 2px;
+    border: none;
+    text-align: center;
+}
+
+.busqueda {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid #ff6600 2px;
+}
+
+
+
